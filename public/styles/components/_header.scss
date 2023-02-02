@@ -1,0 +1,122 @@
+@import '../abstract/variables';
+
+.header {
+  background-color: $hdr-ftr-bg-color;
+  display: flex;
+  padding: 0.3rem 0;
+  position: relative;
+  @include desktop {
+    flex-direction: row;          
+  }
+  .header__wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    @include wrapper;
+    .header__link--logo {
+      background-image: url(../../assets/images/icons/logo.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 35px;
+      width: 35px;
+      @include tablet {
+        font-size: $font-size-32;
+        height: 50px;
+        width: 50px;
+      }
+      .visually-hidden {
+        @include visually-hidden;
+      }
+    }
+    .header__link {
+      display: flex;
+      gap: 1.5rem;
+      @include desktop {
+        gap: 4rem;
+      }
+      .header__link--social {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        transition: $transition;
+        &:hover {
+          transform: $transform-mb;
+          @include desktop {
+            transform: $transform-lg;
+          }
+        }
+        &:hover > svg > path {
+          fill: $highlight-color;
+        }
+        @include tablet {
+          font-size: $font-size-32;
+        }
+      }
+    }
+    .header__menu--kebab {
+      .menu__kebab {
+        display: none;
+        &:checked ~ .header__nav {
+          display: block;
+        }
+      }
+      .menu__kebab--label {
+        display: flex;
+        justify-content: center;
+        .menu_icon {
+          background-image: url(../../assets/images/icons/menu-kebab.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          display: inline-block;
+          height: 24px;
+          width: 24px;
+          @include desktop {
+            display: none;
+          }
+        }
+      }
+      .header__nav {
+        background-color: $hdr-ftr-bg-color;
+        display: none;
+        position: absolute;
+        right: 0%;
+        transition: $transition;
+        text-align: end;
+        top: 100%;
+        width: 100%;
+        // z-index: 2;
+        @include desktop {
+          display: block;
+          position: relative;
+        }
+        .header__list {
+          @include desktop {
+            display: flex;
+          }
+          .header__list--item {
+            padding: 0.4rem 2rem;
+            @include desktop {
+              padding: 0.4rem 1rem;
+            }
+            .header__list--link {
+              color: $hdr-ftr-color;
+              transition: $transition;
+              @include tablet {
+                font-size: $font-size-22;
+              }
+              &:hover {
+                animation: txt-gdt 5s alternate-reverse;
+                background-clip: text;
+                background-image: $text-hv-gdt;
+                background-position: -200%;
+                background-size: 300%;
+                color: transparent;
+                -webkit-background-clip: text;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

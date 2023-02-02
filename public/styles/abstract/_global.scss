@@ -1,0 +1,80 @@
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+  color: $text-color;
+  line-height: 1.56;
+  margin: 0;
+  padding: 0;
+  a {
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+}
+html {
+  background-image: $main-bg-color;
+  font-family: $font-family;
+}
+
+
+@mixin wrapper {
+  margin-inline: auto;
+  max-width: $container;
+  width: calc(100% - 2rem);
+  @include tablet {
+    width: calc(100% - 3.75rem);
+  }
+}
+
+@mixin visually-hidden {
+  height: 1px;
+  left: -100000px;
+  position: absolute;
+  overflow: hidden;
+  top: auto;
+  width: 1px;
+}
+
+@mixin tablet {
+  @media (min-width: 43.75em) {@content;}
+}
+@mixin desktop {
+  @media (min-width: 64em) {@content;}
+}
+
+@mixin border-bottom {
+  text-decoration: 2px underline $highlight-color;
+  text-underline-offset: 0.5rem;
+}
+@mixin border-bottom-tablet {
+  text-decoration: 3px underline $highlight-color;
+  text-underline-offset: 0.5rem;
+}
+@mixin border-bottom-desktop {
+  text-decoration: 4px underline $highlight-color;
+  text-underline-offset: 0.5rem;
+}
+
+@keyframes txt-gdt {
+  to {
+    background-position: 100%;
+  }
+}
+
+@mixin transparent {
+  color: $text-color;
+  background: transparent;
+  border: none;
+  border-bottom: 1.8px solid $highlight-color;
+  font-family: $font-family;
+  padding: 0.5rem;
+}
+
+@mixin main-titles {
+  color: $title-color;
+  font-size: $font-size-22;
+  padding-bottom: 2rem;
+  text-align: center;
+}
