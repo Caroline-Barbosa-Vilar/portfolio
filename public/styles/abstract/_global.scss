@@ -74,14 +74,16 @@ html {
 
 @mixin main-titles {
   color: $title-color;
-  font-size: $font-size-22;
+  font-size: $title-mobile;
   padding-bottom: 2rem;
   text-align: center;
   @include border-bottom;
   @include tablet {
+    font-size: $title-tablet;
     @include border-bottom-tablet;
   }
   @include desktop {
+    font-size: $title-desktop;
     @include border-bottom-desktop;
   }
 }

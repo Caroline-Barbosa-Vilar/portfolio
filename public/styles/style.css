@@ -200,6 +200,7 @@ html {
   }
 }
 .hero .hero__content {
+  margin: 2rem;
   padding: 2rem;
   position: absolute;
   text-align: center;
@@ -225,7 +226,7 @@ html {
 }
 @media (min-width: 43.75em) {
   .hero .hero__content .hero__content--title {
-    font-size: 1.75rem;
+    font-size: 1.68rem;
   }
 }
 @media (min-width: 64em) {
@@ -285,16 +286,16 @@ html {
 }
 .about .about__title {
   color: #1f634b;
-  font-size: 1.37rem;
+  font-size: 1.5rem;
   padding-bottom: 2rem;
   text-align: center;
   -webkit-text-decoration: 2px underline #eb6743;
           text-decoration: 2px underline #eb6743;
   text-underline-offset: 0.5rem;
-  font-size: 1.5rem;
 }
 @media (min-width: 43.75em) {
   .about .about__title {
+    font-size: 1.68rem;
     -webkit-text-decoration: 3px underline #eb6743;
             text-decoration: 3px underline #eb6743;
     text-underline-offset: 0.5rem;
@@ -302,19 +303,10 @@ html {
 }
 @media (min-width: 64em) {
   .about .about__title {
+    font-size: 1.875rem;
     -webkit-text-decoration: 4px underline #eb6743;
             text-decoration: 4px underline #eb6743;
     text-underline-offset: 0.5rem;
-  }
-}
-@media (min-width: 43.75em) {
-  .about .about__title {
-    font-size: 1.75rem;
-  }
-}
-@media (min-width: 64em) {
-  .about .about__title {
-    font-size: 1.875rem;
   }
 }
 .about .about__content {
@@ -338,7 +330,7 @@ html {
 }
 .about .about__content .about__desc .about__desc--text {
   font-size: 1.125rem;
-  padding: 0 2.5rem;
+  padding: 0 2.5rem 1rem;
 }
 @media (min-width: 64em) {
   .about .about__content .about__desc .about__desc--text {
@@ -368,5 +360,83 @@ html {
     -webkit-text-decoration: 4px underline #eb6743;
             text-decoration: 4px underline #eb6743;
     text-underline-offset: 0.5rem;
+  }
+}
+
+.skills {
+  border-bottom: 2px solid #eb6743;
+  padding: 2rem 0;
+  margin-inline: auto;
+  max-width: 69.375rem;
+  width: calc(100% - 2rem);
+}
+@media (min-width: 43.75em) {
+  .skills {
+    width: calc(100% - 3.75rem);
+  }
+}
+.skills .skills__title {
+  color: #1f634b;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  -webkit-text-decoration: 2px underline #eb6743;
+          text-decoration: 2px underline #eb6743;
+  text-underline-offset: 0.5rem;
+}
+@media (min-width: 43.75em) {
+  .skills .skills__title {
+    font-size: 1.68rem;
+    -webkit-text-decoration: 3px underline #eb6743;
+            text-decoration: 3px underline #eb6743;
+    text-underline-offset: 0.5rem;
+  }
+}
+@media (min-width: 64em) {
+  .skills .skills__title {
+    font-size: 1.875rem;
+    -webkit-text-decoration: 4px underline #eb6743;
+            text-decoration: 4px underline #eb6743;
+    text-underline-offset: 0.5rem;
+  }
+}
+@media (min-width: 43.75em) {
+  .skills .skills__content {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 64em) {
+  .skills .skills__content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.skills .skills__content .skills__items {
+  text-align: center;
+  padding: 0 2rem 1.5rem;
+}
+.skills .skills__content .skills__items .skills__items--title {
+  color: #1f634b;
+  font-size: 1.25rem;
+  padding-bottom: 0.5rem;
+}
+@media (min-width: 43.75em) {
+  .skills .skills__content .skills__items .skills__items--title {
+    font-size: 1.37rem;
+  }
+}
+@media (min-width: 64em) {
+  .skills .skills__content .skills__items .skills__items--title {
+    font-size: 1.5rem;
+  }
+}
+.skills .skills__content .skills__items .skills__items--text {
+  font-size: 1.125rem;
+  line-height: 1.2;
+}
+@media (min-width: 64em) {
+  .skills .skills__content .skills__items .skills__items--text {
+    font-size: 1.37rem;
   }
 }/*# sourceMappingURL=style.css.map */

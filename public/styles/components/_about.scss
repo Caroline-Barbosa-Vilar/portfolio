@@ -6,13 +6,6 @@
   @include wrapper;
   .about__title {
     @include main-titles;
-    font-size: $title-mobile;
-    @include tablet {
-      font-size: $title-tablet;
-    }
-    @include desktop {
-      font-size: $title-desktop;
-    }
   }
   .about__content {
     text-align: center;
@@ -31,7 +24,7 @@
     .about__desc {
       .about__desc--text {
         font-size: $font-size-18;
-        padding: 0 2.5rem;
+        padding: 0 2.5rem 1rem;
         @include desktop {
           font-size: $font-size-22;
           & span {
