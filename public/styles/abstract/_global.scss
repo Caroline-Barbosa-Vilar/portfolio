@@ -77,4 +77,11 @@ html {
   font-size: $font-size-22;
   padding-bottom: 2rem;
   text-align: center;
+  @include border-bottom;
+  @include tablet {
+    @include border-bottom-tablet;
+  }
+  @include desktop {
+    @include border-bottom-desktop;
+  }
 }

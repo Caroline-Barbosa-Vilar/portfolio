@@ -1,0 +1,56 @@
+@import '../abstract/variables';
+
+.about {
+  border-bottom: $section-border;
+  padding: $container-padding;
+  @include wrapper;
+  .about__title {
+    @include main-titles;
+    font-size: $title-mobile;
+    @include tablet {
+      font-size: $title-tablet;
+    }
+    @include desktop {
+      font-size: $title-desktop;
+    }
+  }
+  .about__content {
+    text-align: center;
+    @include tablet {
+      align-items: center;
+      display: flex;
+    }
+    .about__img {
+      margin: auto;
+      padding-bottom: 2rem;
+      width: 80vw;
+      @include tablet {
+        width: 35vw;
+      }
+    }
+    .about__desc {
+      .about__desc--text {
+        font-size: $font-size-18;
+        padding: 0 2.5rem;
+        @include desktop {
+          font-size: $font-size-22;
+          & span {
+            display: none;
+          }
+        }
+      }
+      .about__desc--link {
+        transition: $transition;
+        font-size: $font-size-18;
+        @include border-bottom;
+        @include tablet {
+          @include border-bottom-tablet;
+        }
+        @include desktop {
+          font-size: $font-size-22;
+          @include border-bottom-desktop;
+        }
+      }
+    }
+  }
+}

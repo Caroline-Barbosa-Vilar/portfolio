@@ -2,7 +2,6 @@
 
 .hero {
   background-image: linear-gradient(to bottom, #9c5dc0,#ad82d4, #88acd0);
-  // display: flex;
   height: 100vh;
   width: 100vw;
   .hero__img--lx {
@@ -15,7 +14,6 @@
     }
   }
   .hero__content {
-    // display: flex;
     padding: 2rem;
     position: absolute;
     text-align: center;
@@ -26,13 +24,13 @@
       top: 25%;
     }
     .hero__content--title {
-      font-size: $font-size-24;
+      font-size: $title-mobile;
       @include wrapper;
       @include tablet{
-        font-size: $font-size-28;
+        font-size: $title-tablet;
       }
       @include desktop{
-        font-size: $font-size-30;
+        font-size: $title-desktop;
       }
       & span {
         @include border-bottom;
