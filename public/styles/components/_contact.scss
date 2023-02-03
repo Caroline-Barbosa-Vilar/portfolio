@@ -1,0 +1,63 @@
+@import '../abstract/variables';
+
+.contact {
+  padding: $container-padding;
+  .contact__wrapper {
+    display: flex;
+    flex-direction: column;
+    @include wrapper;
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .contact__info {
+      text-align: $text-align;
+      .contact__title {
+        @include main-titles;
+      }
+      .contact__text {
+        font-size: $font-size-18;
+        margin-inline: auto;
+        max-width: 27.8rem;
+        @include desktop {
+          font-size: $font-size-22;
+        }
+      }
+    }
+    .contact__form {
+      padding: 1rem 0.5rem;
+      max-width: 27.8rem;
+      margin-inline: auto;
+      .contact__control {
+        & input, & textarea {
+          line-height: 1.625;
+          margin-block-end: 1rem;
+          width: 100%;
+          @include transparent; 
+          &::placeholder {
+            color: #000000;
+          }
+        }
+        & input {
+          font-size: 1rem;
+        }
+        .visually-hidden {
+          @include visually-hidden;
+        }
+        .contact__btn {
+          cursor: pointer;
+          text-transform: uppercase;
+          transition: $transition;
+          @include transparent;
+          &:hover {
+            color: $highlight-color;
+          }
+        }
+      }
+      .right {
+        display: flex;
+        justify-content: end;
+      }
+    }
+  }
+}
