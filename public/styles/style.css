@@ -137,6 +137,7 @@ html {
   text-align: end;
   top: 100%;
   width: 100%;
+  z-index: 2;
 }
 @media (min-width: 64em) {
   .header .header__wrapper .header__menu--kebab .header__nav {
@@ -174,4 +175,99 @@ html {
   background-size: 300%;
   color: transparent;
   -webkit-background-clip: text;
+}
+
+.hero {
+  background-image: linear-gradient(to bottom, #9c5dc0, #ad82d4, #88acd0);
+  height: 100vh;
+  width: 100vw;
+}
+.hero .hero__img--lx {
+  display: none;
+}
+@media (min-width: 43.75em) {
+  .hero .hero__img--lx {
+    display: block;
+    height: 100%;
+    width: 100vw;
+    margin-inline: auto;
+    max-width: 69.375rem;
+    width: calc(100% - 2rem);
+  }
+}
+@media (min-width: 43.75em) and (min-width: 43.75em) {
+  .hero .hero__img--lx {
+    width: calc(100% - 3.75rem);
+  }
+}
+.hero .hero__content {
+  padding: 2rem;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}
+@media (min-width: 43.75em) {
+  .hero .hero__content {
+    left: 58%;
+    max-width: 28rem;
+    top: 25%;
+  }
+}
+.hero .hero__content .hero__content--title {
+  font-size: 1.5rem;
+  margin-inline: auto;
+  max-width: 69.375rem;
+  width: calc(100% - 2rem);
+}
+@media (min-width: 43.75em) {
+  .hero .hero__content .hero__content--title {
+    width: calc(100% - 3.75rem);
+  }
+}
+@media (min-width: 43.75em) {
+  .hero .hero__content .hero__content--title {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 64em) {
+  .hero .hero__content .hero__content--title {
+    font-size: 1.875rem;
+  }
+}
+.hero .hero__content .hero__content--title span {
+  -webkit-text-decoration: 2px underline #eb6743;
+          text-decoration: 2px underline #eb6743;
+  text-underline-offset: 0.5rem;
+}
+@media (min-width: 43.75em) {
+  .hero .hero__content .hero__content--title span {
+    -webkit-text-decoration: 3px underline #eb6743;
+            text-decoration: 3px underline #eb6743;
+    text-underline-offset: 0.5rem;
+  }
+}
+@media (min-width: 64em) {
+  .hero .hero__content .hero__content--title span {
+    -webkit-text-decoration: 4px underline #eb6743;
+            text-decoration: 4px underline #eb6743;
+    text-underline-offset: 0.5rem;
+  }
+}
+.hero .hero__content .hero__content--text {
+  display: none;
+}
+@media (min-width: 64em) {
+  .hero .hero__content .hero__content--text {
+    display: block;
+    font-size: 1.25rem;
+  }
+}
+.hero .hero__img--sm {
+  height: 100%;
+  width: 100vw;
+}
+@media (min-width: 43.75em) {
+  .hero .hero__img--sm {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
