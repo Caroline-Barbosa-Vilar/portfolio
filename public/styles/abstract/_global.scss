@@ -18,7 +18,6 @@ html {
   font-family: $font-family;
 }
 
-
 @mixin wrapper {
   margin-inline: auto;
   max-width: $container;
@@ -85,5 +84,25 @@ html {
   @include desktop {
     font-size: $title-desktop;
     @include border-bottom-desktop;
+  }
+}
+
+@mixin item {
+  margin: 0 auto;
+  width: 90%;
+}
+
+@keyframes bounce {
+  20%, 50%, 80%, to {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  70% {
+    transform: translateY(-10px);
+  }
+  90% {
+    transform: translateY(-5px);
   }
 }
