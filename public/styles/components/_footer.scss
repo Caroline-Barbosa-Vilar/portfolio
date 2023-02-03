@@ -1,0 +1,46 @@
+@import '../abstract/variables';
+
+.footer {
+  background-color: $hdr-ftr-bg-color;
+  padding: 1rem 2rem;
+  .footer__wrapper {
+    @include ftr-wapper;
+    @include wrapper;
+    @include tablet {
+      justify-content: space-between;
+    }
+    .footer__link {
+      display: flex;
+      gap: 1.6rem;
+      @include tablet {
+        gap: 2rem;
+      }
+      .footer__link--social {
+        transition: $transition;
+        &:hover {
+          transform: $transform-mb;
+          @include desktop {
+            transform: $transform-lg;
+          }
+        }
+        &:hover > svg > path {
+          fill: $highlight-color;
+        }
+        @include tablet {
+          font-size: $font-size-32;
+        }
+      }
+    }
+    .footer__text {
+      color: $hdr-ftr-color;
+      font-size: $font-size-18;
+      transition: $transition;
+      @include tablet {
+        align-self: center;
+      }
+      @include desktop {
+        font-size: $font-size-20;
+      }
+    }
+  }
+}
