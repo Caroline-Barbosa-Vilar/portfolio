@@ -17,29 +17,9 @@ html {
   font-family: "Space Grotesk", sans-serif;
 }
 
-@-webkit-keyframes txt-gdt {
-  to {
-    background-position: 100%;
-  }
-}
-
 @keyframes txt-gdt {
   to {
     background-position: 100%;
-  }
-}
-@-webkit-keyframes bounce {
-  20%, 50%, 80%, to {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-20px);
-  }
-  70% {
-    transform: translateY(-10px);
-  }
-  90% {
-    transform: translateY(-5px);
   }
 }
 @keyframes bounce {
@@ -526,8 +506,7 @@ html {
   width: 90%;
 }
 .projects .projects__grid .projects__grid--item .projects__item--img:hover {
-  -webkit-animation: bounce 1s linear;
-          animation: bounce 1s linear;
+  animation: bounce 1s linear;
   cursor: pointer;
 }
 .projects .projects__grid .projects__grid--item .projects__item--title {
@@ -660,9 +639,6 @@ html {
   padding: 0.5rem;
 }
 .contact .contact__wrapper .contact__form .contact__control input::-moz-placeholder, .contact .contact__wrapper .contact__form .contact__control textarea::-moz-placeholder {
-  color: #000000;
-}
-.contact .contact__wrapper .contact__form .contact__control input:-ms-input-placeholder, .contact .contact__wrapper .contact__form .contact__control textarea:-ms-input-placeholder {
   color: #000000;
 }
 .contact .contact__wrapper .contact__form .contact__control input::placeholder, .contact .contact__wrapper .contact__form .contact__control textarea::placeholder {
