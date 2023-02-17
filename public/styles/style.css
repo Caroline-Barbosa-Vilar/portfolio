@@ -370,6 +370,9 @@ html {
     text-underline-offset: 0.5rem;
   }
 }
+.about .about__content .about__desc .about__desc--link:hover {
+  color: #eb6743;
+}
 
 .skills {
   border-bottom: 2px solid #eb6743;
