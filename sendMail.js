@@ -1,24 +1,29 @@
 var nodemailer = require('nodemailer');
 
-exports.send = function() {
+exports.send = function(name, email, msg) {
   var transporter = nodemailer.createTransport({
-    service: 'gmail',
+    host: 'smtp.mail.yahoo.com',
+    port: 465,
+    service: 'yahoo',
+    secure: false,
     auth: {
       user: 'portfolio.caroline@yahoo.com',
-      pass: 'E6aGa?mN$FFS3@Z'
-    }
+      pass: 'fweM3g@iUXRN'
+    },
+    debug: false,
+    logger: true
   });
 
   var mailOptions = {
     from: email,
     to: 'cbarbosavilar@gmail.com',
-    subject: 'Message from portfólio',
+    subject: 'Message from portfólio' + name,
     text: msg
   };
   
   transporter.sendMail(mailOptions, function (error, info){
     if (error) {
-      return error.message;
+      // return error.message;
       console.log(error)
     } else {
       console.log('Email sent: ' + info.response)

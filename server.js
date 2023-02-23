@@ -10,6 +10,7 @@ app.get('/index', function(req, res) {
 });
 
 app.get('/send', function(req, res){
+  console.log('teste')
   sendMail.send(req.query.name, req.query.email, req.query.msg);
   // res.redirect('')
 });
