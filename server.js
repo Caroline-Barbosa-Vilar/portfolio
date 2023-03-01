@@ -1,7 +1,11 @@
+var sendMail = require('./sendMail');
 var express = require('express');
+var bodyParser = require('body-parser');
 var app = express();
 var path = require('path');
-var sendMail = require('./sendMail');
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.use(express.static('public'));
 
@@ -9,10 +13,10 @@ app.get('/index', function(req, res) {
   res.sendFile(path.join(__dirname, '/public', 'index.html'));
 });
 
-app.get('/send', function(req, res){
+app.post('/send', function(req, res){
   console.log('teste')
-  sendMail.send(req.query.name, req.query.email, req.query.msg);
-  // res.redirect('')
+  sendMail.send(req.body.name, req.body.email, req.body.message);
+  res.redirect('')
 });
 
 app.listen(8080, function() {

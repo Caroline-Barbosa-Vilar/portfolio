@@ -19,9 +19,10 @@
       .projects__item--img {
         height: 100%;
         padding-bottom: 1rem;
+        position: relative;
+        z-index: 1;
         @include item;
         &:hover {
-          animation: bounce 1s linear;
           cursor: pointer;
         }
       }

@@ -22,20 +22,6 @@ html {
     background-position: 100%;
   }
 }
-@keyframes bounce {
-  20%, 50%, 80%, to {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-20px);
-  }
-  70% {
-    transform: translateY(-10px);
-  }
-  90% {
-    transform: translateY(-5px);
-  }
-}
 .header {
   background-color: #9c5dc0;
   display: flex;
@@ -505,11 +491,12 @@ html {
 .projects .projects__grid .projects__grid--item .projects__item--img {
   height: 100%;
   padding-bottom: 1rem;
+  position: relative;
+  z-index: 1;
   margin: 0 auto;
   width: 90%;
 }
 .projects .projects__grid .projects__grid--item .projects__item--img:hover {
-  animation: bounce 1s linear;
   cursor: pointer;
 }
 .projects .projects__grid .projects__grid--item .projects__item--title {

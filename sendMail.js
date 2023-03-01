@@ -1,11 +1,11 @@
 var nodemailer = require('nodemailer');
 
-exports.send = function(name, email, msg) {
+var send = function(name, email, message) {
   var transporter = nodemailer.createTransport({
     host: 'smtp.mail.yahoo.com',
     port: 465,
     service: 'yahoo',
-    secure: false,
+    secure: true,
     auth: {
       user: 'portfolio.caroline@yahoo.com',
       pass: 'fweM3g@iUXRN'
@@ -18,7 +18,7 @@ exports.send = function(name, email, msg) {
     from: email,
     to: 'cbarbosavilar@gmail.com',
     subject: 'Message from portfólio' + name,
-    text: msg
+    text: message
   };
   
   transporter.sendMail(mailOptions, function (error, info){
@@ -30,3 +30,5 @@ exports.send = function(name, email, msg) {
     }
   })
 };
+
+module.exports = { send };
