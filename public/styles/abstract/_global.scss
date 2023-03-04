@@ -17,7 +17,16 @@ html {
   background-image: $main-bg-color;
   font-family: $font-family;
 }
-
+body::-webkit-scrollbar {
+	width: 3px;
+}
+body::-webkit-scrollbar-thumb {
+	background-color: $hdr-ftr-bg-color;
+	border-radius: 20px;
+}
+body::-webkit-scrollbar-track {
+	background: $main-bg-color;
+}
 @mixin wrapper {
   margin-inline: auto;
   max-width: $container;

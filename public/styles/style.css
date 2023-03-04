@@ -17,6 +17,19 @@ html {
   font-family: "Space Grotesk", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #9c5dc0;
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, #88acd0 50%, #9c90d4, #9f51cc, #9c5dc0);
+}
+
 @keyframes txt-gdt {
   to {
     background-position: 100%;
