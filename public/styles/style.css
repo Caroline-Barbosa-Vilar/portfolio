@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  color: #333233;
+  color: #464646;
   line-height: 1.56;
   margin: 0;
   padding: 0;
@@ -217,11 +217,11 @@ body::-webkit-scrollbar-track {
   .hero .hero__content {
     left: 58%;
     max-width: 28rem;
-    top: 25%;
+    top: 12%;
   }
 }
 .hero .hero__content .hero__content--title {
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   margin-inline: auto;
   max-width: 69.375rem;
   width: calc(100% - 2rem);
@@ -233,12 +233,12 @@ body::-webkit-scrollbar-track {
 }
 @media (min-width: 43.75em) {
   .hero .hero__content .hero__content--title {
-    font-size: 1.68rem;
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 64em) {
   .hero .hero__content .hero__content--title {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
   }
 }
 .hero .hero__content .hero__content--title span {
@@ -267,6 +267,7 @@ body::-webkit-scrollbar-track {
   .hero .hero__content .hero__content--text {
     display: block;
     font-size: 1.25rem;
+    padding-top: 0.6rem;
   }
 }
 .hero .hero__img--sm {
@@ -293,7 +294,7 @@ body::-webkit-scrollbar-track {
 }
 .about .about__title {
   color: #1f634b;
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   padding-bottom: 2rem;
   text-align: center;
   -webkit-text-decoration: 2px underline #eb6743;
@@ -302,7 +303,7 @@ body::-webkit-scrollbar-track {
 }
 @media (min-width: 43.75em) {
   .about .about__title {
-    font-size: 1.68rem;
+    font-size: 1.6rem;
     -webkit-text-decoration: 3px underline #eb6743;
             text-decoration: 3px underline #eb6743;
     text-underline-offset: 0.5rem;
@@ -310,7 +311,7 @@ body::-webkit-scrollbar-track {
 }
 @media (min-width: 64em) {
   .about .about__title {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
     -webkit-text-decoration: 4px underline #eb6743;
             text-decoration: 4px underline #eb6743;
     text-underline-offset: 0.5rem;
@@ -387,7 +388,7 @@ body::-webkit-scrollbar-track {
 }
 .skills .skills__title {
   color: #1f634b;
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   padding-bottom: 2rem;
   text-align: center;
   -webkit-text-decoration: 2px underline #eb6743;
@@ -396,7 +397,7 @@ body::-webkit-scrollbar-track {
 }
 @media (min-width: 43.75em) {
   .skills .skills__title {
-    font-size: 1.68rem;
+    font-size: 1.6rem;
     -webkit-text-decoration: 3px underline #eb6743;
             text-decoration: 3px underline #eb6743;
     text-underline-offset: 0.5rem;
@@ -404,7 +405,7 @@ body::-webkit-scrollbar-track {
 }
 @media (min-width: 64em) {
   .skills .skills__title {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
     -webkit-text-decoration: 4px underline #eb6743;
             text-decoration: 4px underline #eb6743;
     text-underline-offset: 0.5rem;
@@ -465,7 +466,7 @@ body::-webkit-scrollbar-track {
 }
 .projects .projects__title {
   color: #1f634b;
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   padding-bottom: 2rem;
   text-align: center;
   -webkit-text-decoration: 2px underline #eb6743;
@@ -474,7 +475,7 @@ body::-webkit-scrollbar-track {
 }
 @media (min-width: 43.75em) {
   .projects .projects__title {
-    font-size: 1.68rem;
+    font-size: 1.6rem;
     -webkit-text-decoration: 3px underline #eb6743;
             text-decoration: 3px underline #eb6743;
     text-underline-offset: 0.5rem;
@@ -482,7 +483,7 @@ body::-webkit-scrollbar-track {
 }
 @media (min-width: 64em) {
   .projects .projects__title {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
     -webkit-text-decoration: 4px underline #eb6743;
             text-decoration: 4px underline #eb6743;
     text-underline-offset: 0.5rem;
@@ -591,7 +592,7 @@ body::-webkit-scrollbar-track {
 }
 .contact .contact__wrapper .contact__info .contact__title {
   color: #1f634b;
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   padding-bottom: 2rem;
   text-align: center;
   -webkit-text-decoration: 2px underline #eb6743;
@@ -600,7 +601,7 @@ body::-webkit-scrollbar-track {
 }
 @media (min-width: 43.75em) {
   .contact .contact__wrapper .contact__info .contact__title {
-    font-size: 1.68rem;
+    font-size: 1.6rem;
     -webkit-text-decoration: 3px underline #eb6743;
             text-decoration: 3px underline #eb6743;
     text-underline-offset: 0.5rem;
@@ -608,7 +609,7 @@ body::-webkit-scrollbar-track {
 }
 @media (min-width: 64em) {
   .contact .contact__wrapper .contact__info .contact__title {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
     -webkit-text-decoration: 4px underline #eb6743;
             text-decoration: 4px underline #eb6743;
     text-underline-offset: 0.5rem;
@@ -634,7 +635,7 @@ body::-webkit-scrollbar-track {
   -webkit-margin-after: 1rem;
           margin-block-end: 1rem;
   width: 100%;
-  color: #333233;
+  color: #464646;
   background: transparent;
   border: none;
   border-bottom: 1.8px solid #eb6743;
@@ -662,7 +663,7 @@ body::-webkit-scrollbar-track {
   cursor: pointer;
   text-transform: uppercase;
   transition: 100ms ease-in-out;
-  color: #333233;
+  color: #464646;
   background: transparent;
   border: none;
   border-bottom: 1.8px solid #eb6743;
