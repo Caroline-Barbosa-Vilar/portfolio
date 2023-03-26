@@ -52,6 +52,9 @@
         @include desktop {
           font-size: $font-size-22;
         }
+        & p {
+          @include border-bottom;
+        }
         .projects__item--link {
           font-size: $font-size-18;
           margin-right: 1.5rem;

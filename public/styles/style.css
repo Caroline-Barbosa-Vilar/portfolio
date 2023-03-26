@@ -549,6 +549,11 @@ body::-webkit-scrollbar-track {
     font-size: 1.37rem;
   }
 }
+.projects .projects__grid .projects__grid--item .projects__item--info p {
+  -webkit-text-decoration: 2px underline #eb6743;
+          text-decoration: 2px underline #eb6743;
+  text-underline-offset: 0.5rem;
+}
 .projects .projects__grid .projects__grid--item .projects__item--info .projects__item--link {
   font-size: 1.125rem;
   margin-right: 1.5rem;
